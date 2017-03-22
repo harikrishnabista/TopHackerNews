@@ -19,6 +19,9 @@
 
     <header-file src="src/ios/TopHackerNewsPlugin.h" target-dir="TopHackerNews"/>
     <source-file src="src/ios/TopHackerNewsPlugin.m" target-dir="TopHackerNews"/>
+          
+          <header-file src="src/ios/TopHackerNewsManager.h" target-dir="TopHackerNews"/>
+           <source-file src="src/ios/TopHackerNewsManager.m" target-dir="TopHackerNews"/>
   </platform>
 
 </plugin>
