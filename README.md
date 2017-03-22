@@ -1,4 +1,4 @@
-# Cordova Hello World Plugin
+# Cordova TopHackerNews Plugin
 
 iOS cordova plugin which provides top 20 famous hacker news. 
 
