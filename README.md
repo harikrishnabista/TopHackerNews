@@ -1,45 +1,41 @@
 # Cordova Hello World Plugin
 
-This plugin also contains a framework TopHackerNews.framework which is ios framework. To make this plugin you have to dragn this
-framework into your ios project and run
+iOS cordova plugin which provides top 20 famous hacker news. 
 
 ## Using
 
 Create a new Cordova Project
 
-    $ cordova create hello com.example.helloapp Hello
+    $ cordova create hello com.meroapp.sampleapp Hello
     
 Install the plugin
 
     $ cd hello
-    $ cordova plugin add https://github.com/don/cordova-plugin-hello.git
-    
-
-Edit `www/js/index.js` and add the following code inside `onDeviceReady`
-
-```js
-    var success = function(message) {
-        alert(message);
-    }
-
-    var failure = function() {
-        alert("Error calling Hello Plugin");
-    }
-
-    hello.greet("World", success, failure);
-```
+    $ cordova plugin add https://github.com/harikrishnabista/TopHackerNews.git
 
 Install iOS or Android platform
 
     cordova platform add ios
-    cordova platform add android
+
+Javascript to call module
+place this code inside onDeviceReady to test
+
+            var successCallback = function  (msg) {
+                alert(msg);
+            };
+            
+            var errorCallback = function () {
+                alert("fail to call echo funciton");
+            };
+            
+            cordova.exec(successCallback, errorCallback, "TopHackerNews", "showHackerNews", [""]);    
     
 Run the code
 
-    cordova run 
+    cordova run ios 
 
 ## More Info
 
-For more information on setting up Cordova see [the documentation](http://cordova.apache.org/docs/en/latest/guide/cli/index.html)
-
+For more information on setting up Cordova see [the documentation](https://github.com/harikrishnabista/TopHackerNews)
 For more info on plugins see the [Plugin Development Guide](http://cordova.apache.org/docs/en/latest/guide/hybrid/plugins/index.html)
+Contact author through harikrista@gmail.com.
