@@ -13,7 +13,7 @@
     
     <config-file target="config.xml" parent="/widget">
       <feature name="TopHackerNews">
-        <param name="ios-package" value="TopHackerNews" />
+        <param name="ios-package" value="TopHackerNewsPlugin" />
       </feature>
     </config-file>
 

@@ -1,7 +1,7 @@
 #import <Cordova/CDV.h>
 
-@interface HWPHello : CDVPlugin
+@interface TopHackerNewsPlugin : CDVPlugin
 
-- (void) greet:(CDVInvokedUrlCommand*)command;
+- (void) showHackerNews:(CDVInvokedUrlCommand*)command;
 
 @end
