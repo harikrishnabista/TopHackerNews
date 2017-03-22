@@ -19,10 +19,16 @@
 
     <header-file src="src/ios/TopHackerNewsPlugin.h" target-dir="TopHackerNews"/>
     <source-file src="src/ios/TopHackerNewsPlugin.m" target-dir="TopHackerNews"/>
+<<<<<<< HEAD
 
     <header-file src="src/ios/TopHackerNewsManager.h" target-dir="TopHackerNews"/>
     <source-file src="src/ios/TopHackerNewsManager.m" target-dir="TopHackerNews"/>
 
+=======
+          
+          <header-file src="src/ios/TopHackerNewsManager.h" target-dir="TopHackerNews"/>
+           <source-file src="src/ios/TopHackerNewsManager.m" target-dir="TopHackerNews"/>
+>>>>>>> 2f6288c24218b74f0b35eeb6844d59e3d72642c8
   </platform>
 
 </plugin>
