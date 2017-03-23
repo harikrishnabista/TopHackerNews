@@ -1,5 +1,4 @@
 #import "TopHackerNewsPlugin.h"
-#import "helper.h"
 #import "TopHackerNewsManager.h"
 
 @implementation TopHackerNewsPlugin
