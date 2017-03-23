@@ -1,4 +1,4 @@
-
+#import "TopHackerNewsPlugin.h"
 #import <TopHackerNews/TopHackerNewsSDK.h>
 
 @implementation TopHackerNewsPlugin
