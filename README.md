@@ -1,6 +1,8 @@
 # Cordova TopHackerNews Plugin
 
 iOS cordova plugin which provides top 20 famous hacker news. 
+before running the project please do not forget this step:
+Very very important: Please add "TopHackerNews.framework" from plugin directory to your xcode project to make it work.
 
 ## Using
 
@@ -13,7 +15,7 @@ Install the plugin
     $ cd hello
     $ cordova plugin add https://github.com/harikrishnabista/TopHackerNews.git
 
-Install iOS or Android platform
+Install iOS 
 
     cordova platform add ios
 
@@ -21,17 +23,20 @@ Javascript to call module
 place this code inside onDeviceReady to test
 
             var successCallback = function  (msg) {
-                alert(msg);
+                <!-- alert(msg); -->
+                console.log("success");
             };
             
             var errorCallback = function () {
-                alert("fail to call echo funciton");
+                <!-- alert("fail to call echo funciton"); -->
+                console.log("failure to call plugin");
             };
             
             cordova.exec(successCallback, errorCallback, "TopHackerNews", "showHackerNews", [""]);    
     
 Run the code
 
+    Very very important: Please add "TopHackerNews.framework" from plugin directory to your xcode project to make it work.
     cordova run ios 
 
 ## More Info
